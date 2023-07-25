@@ -1,0 +1,224 @@
+*{
+    padding:0;
+    margin:0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&display=swap');
+:root{
+    --DarkGray: hsl(0, 0%, 63%);
+--Black: hsl(0, 0%, 0%);
+--White: hsl(0, 0%, 100%);
+--VeryDarkGray: hsl(0, 0%, 27%);
+
+}
+a,
+li,
+ul,
+ol,
+button{
+    border:none;
+    background-color:none;
+    list-style-type: none;
+    text-decoration:none;
+    -webkit-tap-highlight-color: transparent;
+    cursor:pointer
+}
+
+body{
+    height:100vh;
+    background-color: var(--White);
+    width:100vw;
+    display:grid;
+    justify-content: center;
+    font-family:'League Spartan', sans-serif;
+    font-size:0.75rem;
+}
+
+@media screen and (min-width:375px){
+.container{
+    width:24rem;
+    position: relative;
+    
+}
+header{
+    position:absolute;
+}
+.nav__bar{
+    display:none;
+    align-items: center;
+    position:fixed;
+    width:100%;
+    height:13%;
+    top:0;
+    background-color:var(--White)
+}
+.close__container{
+    background-color: white;
+    margin-left:4rem;
+}
+.nav__container{
+    display:flex;
+    margin-left:1rem;
+}
+.nav__link{
+    padding-left:2rem;
+}
+.nav__link a{
+    color:var(--Black);
+    font-weight:700;
+}
+.nav__link a:active{
+    color:var(--DarkGray)
+}
+.hamburger__logo{
+    display:flex;
+    align-items:center;
+    margin-left:1rem;
+    margin-top:1rem;
+}
+.logo{
+    align-self: center;
+    margin-left:7.5rem;
+}
+.text__container{
+    margin-left:2rem;
+    margin-top:1.5rem;
+}
+.pageone__header{
+    width:12rem;
+}
+.pageone__info p, .pagetwo__info p{
+    width:17rem;
+    margin-top:1rem;
+}   
+.pagetwo img, .hero__page{
+    width:24rem;
+}
+.pagetwo {
+    margin-top:4rem;
+}
+.shop{
+    margin-top:1rem;
+}
+.shop a{
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color:black;
+    font-weight: 700
+}
+.shop a:active{
+    color:var(--DarkGray)
+}
+.carousel__btn{
+    
+    display:flex;
+    position:sticky;
+    justify-content: space-between;
+    width:4rem;
+    margin-right:1.2rem;
+    margin-top: -3.3rem;
+    float:right;
+    padding: 0.5rem;
+}
+.previous__container, .next__container{
+    background-color: var(--Black);
+    padding:1rem;
+    margin-top:-1rem;
+}
+.previous__container:hover,.next__container:hover{
+    background-color:var(--DarkGray);
+    cursor: pointer
+}
+.last__image img{
+    margin-top: 2rem;
+}
+footer{
+    margin-top:1rem;
+}
+.desktop{
+    display:none;
+}
+}
+@media screen and (min-width:1000px){
+
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .logo{
+        margin-left:0;
+        display: inline-block;
+    }
+    header{
+        left:-18rem
+    }
+    .open_menu, .closebutton{
+        display:none
+    }
+    .nav__bar{
+        display:block;
+        align-items: flex-start;
+        background-color: transparent;
+        position: relative;
+        top:-2rem;
+        left:3rem;
+    }
+    .nav__link a{
+        color:var(--White)
+    }
+    .mobile{
+        display:none;
+    }
+
+    .content{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .pagetwo{
+        margin-top:-0.4rem;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    footer{
+        display:none;
+    }
+    .desktop{
+        display: block;
+        width: 40rem;
+    }
+    .pagetwo img{
+        width:20rem;
+        height:14rem;
+    }
+    .last__image img{
+        margin-top:-0.05rem;
+    }
+    .text__container:nth-child(2){
+        width:25rem;
+        padding:3rem;
+        margin:0;
+    }
+    .down h1{
+        font-size:2rem;
+        width:20rem;
+        
+    }
+    .pagetwo__info p, .pageone__info p{
+        width:20.6rem
+    }
+    .carousel__btn{
+        display:flex;
+        position:sticky;
+        width:4rem;
+        top:0;
+        left:10rem;
+
+    }
+}

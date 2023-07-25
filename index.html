@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="index.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Room homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <!--header-->
+  <header>
+   <!--The logo and hamburger section-->
+   <section class="hamburger__logo">
+    <div class="hamburger__container">
+      <img src="./images/icon-hamburger.svg" alt="hamburger_menu" class="open_menu">
+    </div>
+    <div class="logo__container" aria-labelledby="logo container">
+      <img src="./images/logo.svg" alt="logo" class="logo" id="logo">
+    </div>
+   </section>
+   <!--end of hamburger and navbar section-->
+
+      <!--The Nav bar -->
+    <nav class="nav__bar" id="navigation">
+      <button class="close__container">
+        <img src="./images/icon-close.svg" alt="" class="closebutton">
+      </button>
+      <ul class="nav__container">
+        <li class="nav__link"><a href="#">home</a></li>
+        <li class="nav__link"><a href="#">shop</a></li>
+        <li class="nav__link"><a href="#">about</a></li>
+        <li class="nav__link"><a href="#">contact</a></li>
+      </ul>
+    </nav>
+    <!--Navbar ends here-->
+  </header>
+    <!--header ends-->
+ 
+  
+  
+  <main>
+    <!--First page that contains the hero images and carousel btn-->
+    <section class="pageone">
+      <!--Content1-->
+      <div class="content">
+        <div aria-labelledby="hero image" class="hero__image1">
+          <img src="./images/mobile-image-hero-1.jpg" alt="hero images" class="hero__page mobile">
+          <img src="./images/desktop-image-hero-1.jpg" alt="hero images" class="hero__page desktop">
+           <!--The carousel buttons-->
+           <div class="carousel__btn" aria-labelledby="carousel__btn" class="carousel__btn__container">
+            <div class="previous__container">
+              <img src="./images/icon-angle-left.svg" alt="Previous button" class="previous">
+            </div>
+            <div class="next__container">
+              <img src="./images/icon-angle-right.svg" alt="Next button" class="next">
+            </div>
+          </div>
+          <!--end of carousel button-->
+        </div>
+       <div class="text__container down">
+          <div class="pageone__header">
+            <h1>Discover innovative ways to decorate</h1>
+          </div>
+          <div class="pageone__info">
+            <p> We provide unmatched quality, comfort, and style for property owners across the country. 
+            Our experts combine form and function in bringing your vision to life. Create a room in your 
+            own style with our collection and make your property a reflection of you and what you love.</p>
+          </div>
+         <p class="shop"><a href="#">Shop now</a><img src="./images/icon-arrow.svg" alt="" class="arrow"></p>
+        </div>
+      </div>
+    
+      <!--end of content1-->
+             
+      <!--content2-->
+      <div class="content">
+        <div aria-labelledby="hero image" class="hero__image2">
+          <img src="./images/mobile-image-hero-2.jpg" alt=" hero images" class="hero__page mobile">
+          <img src="./images/desktop-image-hero-2.jpg" alt=" hero images" class="hero__page desktop">
+           <!--The carousel buttons-->
+           <div class="carousel__btn" aria-labelledby="carousel__btn" id="carousel__btn__container">
+            <div class="previous__container">
+              <img src="./images/icon-angle-left.svg" alt="Previous button" class="previous">
+            </div>
+            <div class="next__container">
+              <img src="./images/icon-angle-right.svg" alt="Next button" class="next">
+            </div>
+          </div>
+          <!--end of carousel button-->
+        </div>
+        <div class="text__container down">
+          <div class="pageone__header">
+            <h1> We are available all across the globe</h1>
+          </div>
+          <div class="pageone__info">
+            <p>
+            With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+            Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+            store locator. Any questions? Don't hesitate to contact us today.
+            </p>
+          </div>
+          <p class="shop"><a href="#">Shop now</a><img src="./images/icon-arrow.svg" alt="" class="arrow"></p>
+        </div>
+      </div>
+      <!--content2 ends here-->
+
+      <!--content3-->
+      <div class="content">
+        <div aria-labelledby="hero image" class="hero__image3">
+          <img src="./images/mobile-image-hero-3.jpg" alt="hero images" class="hero__page mobile">
+          <img src="./images/desktop-image-hero-3.jpg" alt="hero images" class="hero__page desktop">
+            <!--The carousel buttons-->
+          <div class="carousel__btn" aria-labelledby="carousel__btn" class="carousel__btn__container">
+            <div class="previous__container">
+              <img src="./images/icon-angle-left.svg" alt="Previous button" class="previous">
+            </div>
+            <div class="next__container">
+              <img src="./images/icon-angle-right.svg" alt="Next button" class="next">
+            </div>
+          </div>
+          <!--end of carousel button-->
+        </div>
+        <div class="text__container down">
+          <div class="pageone__header">
+            <h1> Manufactured with the best materials</h1>
+          </div>
+          <div class="pageone__info">
+            <p> 
+            Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+            experience in this industry, we understand what customers want for their home and office.
+            </p>
+          </div>
+          <p class="shop"><a href="#">Shop now</a><img src="./images/icon-arrow.svg" alt="" class="arrow"></p>
+      </div>  
+        <!--content3 ends here-->
+
+     </section>
+      <!--End of first page-->
+
+
+    
+    <!--page Two starts-->
+      <section class="pagetwo">
+      <!--The images container-->
+        <div aria-labelledby="pagetwo image" class="pagetwo__image">
+          <img src="./images/image-about-dark.jpg" alt="">
+        </div>
+        <div class="text__container">
+          <div class="pagetwo__header">
+            <h1>About our furniture</h1>
+          </div>
+        <div class="pagetwo__info">
+          <p>  Our multifunctional collection blends design and function to suit your individual taste.
+            Make each room unique, or pick a cohesive theme that best express your interests and what
+            inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+            or anything in between. Product specialists are available to help you create your dream space.</p>
+        </div>  
+      </div>
+        <div class="last__image">
+          <img src="./images/image-about-light.jpg" alt="">
+        </div>
+    </section>   
+    <!--page2 ends-->
+  </main>
+  <script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  </div>
+</body>
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Soulbroda</a>.
+  </div>
+</footer>
+</html>
